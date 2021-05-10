@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",    
+    "noEmit": false,                
+    "strict": true,            
+    "outDir": "dist",
+    "rootDirs": ["src/"],              
+    "esModuleInterop": true,                  
+    "skipLibCheck": true,                    
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true  
+  }
+}

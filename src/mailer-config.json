@@ -1,0 +1,8 @@
+{
+    "service": "gmail",
+    "Port": 465,
+    "auth": {
+        "user": "testnt64@gmail.com",
+        "pass": "injbjnzckuqjddgm"
+    }
+}
