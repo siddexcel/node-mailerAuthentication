@@ -39,6 +39,7 @@ export async function sendOtp(req: Request, res: Response) {
         const user = await User.findOne({ email })
         if (user) {
             const response = await sendMail(email, otp.toString());
+            const updateOtp = await User.updateOne({email : email}, {$set: { otp: otp.toString()}})
             return res.status(StatusCodes.CREATED).send({
                 'token': user.token
             })
